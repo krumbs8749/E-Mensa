@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+ <meta charset="UTF-8">
+ <title>Ihre E-Mensa</title>
+ <link rel="stylesheet" type="text/css" href="css/werbeseite.css">
+</head>
+<body>
+<header class="e-mensa header">
+ <?php echo $this->yieldContent('header'); ?>
+</header>
+<main class="e-mensa main-container">
+<?php /*    <?php echo $this->yieldContent('main'); ?>*/ ?>
+ <?php echo $this->yieldContent('img'); ?>
+ <?php echo $this->yieldContent('info'); ?>
+ <?php echo $this->yieldContent('cost'); ?>
+ <?php echo $this->yieldContent('allerge'); ?>
+ <?php echo $this->yieldContent('zahl'); ?>
+ <?php echo $this->yieldContent('noti'); ?>
+ <?php echo $this->yieldContent('werbung'); ?>
+ <?php echo $this->yieldContent('farewell'); ?>
+</main>
+<footer>
+ <?php echo $this->yieldContent('footer'); ?>
+</footer>
+
+</body>
+</html>

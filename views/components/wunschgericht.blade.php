@@ -1,0 +1,84 @@
+<!Doctype html>
+<html>
+<head lang="de">
+    <meta charset="UTF-8">
+    <title>Wunschgericht</title>
+    <style>
+        .welcome_container{
+            color: #008888;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: 10% 0 5% 0;
+        }
+        .form_container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form_wg{
+            display: flex;
+            flex-direction: column;
+            height: 50%;
+            width: 70%;
+        }
+        .input-container{
+            display: grid;
+            grid-template-columns: 15% 50% auto;
+        }
+        .go_back_container, .form_wg > button {
+            width: 20%;
+            text-decoration: none;
+            text-align: center;
+            background: #008888;
+            border: 1px black solid;
+            border-radius: 10px;
+            color: white;
+            padding: 5px;
+            margin-bottom: 0.5rem;
+
+            font-size: .9rem;
+            font-family: sans-serif;
+
+        }
+        .input-container {
+            margin-bottom: 2rem;
+            display: grid;
+            grid-template-columns: 15% auto;
+        }
+
+        .input-container > input {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="welcome_container">
+    <h1>Wunschgericht</h1>
+</div>
+<div class="form_container">
+    <form class="form_wg" method="post">
+        <div class="input-container">
+            <label for="name_wg">Name des gewünschten Gerichts</label>
+            <input required type="text" id="name_wg" name="name_wg" placeholder="Name des Gerichts">
+        </div>
+        <div class="input-container">
+            <label for="beschreibung_wg">Beschreibung</label>
+            <input required type="text" id="beschreibung_wg" name="beschreibung_wg" placeholder="Beschreibung des Gerichts">
+        </div>
+        <div class="input-container">
+            <label for="ersteller_wg">Ihr Name</label>
+            <input  type="text" id="ersteller_wg" name="ersteller_wg" placeholder="Name">
+        </div>
+        <div class="input-container">
+            <label for="email_wg">Ihre E-Mail</label>
+            <input required type="email" id="email_wg" name="email_wg" placeholder="Email">
+        </div>
+        <button type="submit">Gericht vorschlagen</button>
+        <a href="/werbeseite" class="go_back_container">Go back to main menu</a>
+    </form>
+</div>
+</body>
+</html><?php

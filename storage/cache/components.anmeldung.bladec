@@ -61,12 +61,12 @@
  </div>
  <div class="input-container">
  <label for="email_anmeldung">E-Mail</label>
- <input required type="text" id="email_anmeldung" name="email_anmeldung">
+ <input required type="email" id="email_anmeldung" name="email_anmeldung">
 
  </div>
  <div class="input-container">
  <label for="passwort_anmeldung">Passwort</label>
- <input required type="text" id="passwort_anmeldung" name="passwort_anmeldung">
+ <input required type="password" id="passwort_anmeldung" name="passwort_anmeldung">
  <?php if(!$check_password): ?>
  <span class="fehler">Ihre Passwort war falsch</span>
  <?php endif; ?>

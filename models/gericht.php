@@ -41,3 +41,21 @@ function db_anzahl_gerichte() {
     mysqli_close($link);
     return $res_anzahl_gerichte;
 }
+
+function db_get_gericht_bildname_name($id){
+    $link = connectdb();
+
+    $gerichtId = $link->real_escape_string($id);
+
+    $sql = "SELECT DISTINCT bildname, name FROM gericht WHERE id = $gerichtId";
+
+    $res_bildname = mysqli_query($link, $sql)->fetch_assoc();
+
+    if (!$res_bildname) {
+        echo "Fehler während der Abfrage:  ", mysqli_error($link);
+        exit();
+    };
+
+    mysqli_close($link);
+    return $res_bildname;
+}

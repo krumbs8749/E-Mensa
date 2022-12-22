@@ -20,6 +20,7 @@ function login_controller($rd){
     $link -> commit();
 
     if(isset($userID)){
+        $_SESSION['userId'] = $userID;
         // login user
         $userLoginDataCheck = $link->query("SELECT COUNT(1) as res FROM benutzer WHERE passwort = '$password' AND email = '$email'")->fetch_assoc()['res'];
         $link -> commit();

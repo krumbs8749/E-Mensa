@@ -7,7 +7,7 @@
  <div class="nav">
  <ul>
  <li><a href="../projekt">Ankündigung</a></li>
- <li><a href="../projekt">Speisen</a></li>
+ <li><a href="/bewertungen">Bewertungen</a></li>
  <li><a href="../projekt">Zahlen</a></li>
  <li><a href="../projekt">Kontakt</a></li>
  <li><a href="../projekt">Wichtig für uns</a></li>
@@ -50,6 +50,7 @@
  <th>Preis intern</th>
  <th>Preis extern</th>
  <th>Allergen</th>
+ <th>Link zur Bewertung</th>
  </tr>
  </thead>
  <tbody>
@@ -73,6 +74,7 @@
  <td>{$pI}&euro;</td>
  <td>{$pE}&euro;</td>
  <td>{$dish['allergen_codes']}</td>
+ <td><a href='/benutzer_verifizieren?gerichtId={$dish['gericht_id']}'>bewerten</a></td>
  </tr>";
  }
  ?>

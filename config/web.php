@@ -30,6 +30,12 @@ return array(
     '/anmeldung' => 'WebsiteController@anmeldung',
     '/anmeldung_verfizieren' => 'WebsiteController@anmeldung_verfizieren',
     '/abmeldung' => 'WebsiteController@abmeldung',
+    '/benutzer_verifizieren' => 'WebsiteController@benutzer_verifizieren',
+    '/bewertung' => 'WebsiteController@bewertung',
+    '/bewertung_verifizieren' => 'WebsiteController@bewertung_verifizieren',
+    '/bewertungen' => 'WebsiteController@bewertungen',
+    '/meinebewertungen' => 'WebsiteController@meinebewertungen',
+    '/delete_bewertung' => 'WebsiteController@deletebewertung',
 
     '/test' => 'TestController@test'
 
